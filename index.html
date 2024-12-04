@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playoffs da NBA 24-25</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+      <img class="-menu" src="img/nba.png" alt="NBA Logo" class="logo" style="height: 50px;">
+      <h1>Playoffs da NBA 24-25</h1>
+    </header>
+  
+    <main class="container">
+      <section>
+        <h1 class="titulo">Primeira Rodada</h1>
+        <div class="grid">
+            <div class="game">
+                <p>Jogo 1</p>
+                <div class="match">
+                  <img class="team-logo" src="img/Dallas Mavericks.png" alt="">
+                  <span>Dallas Mavericks</span>
+                  <button class="btn-winner" data-winner="Dallas Mavericks" data-next="#quarter1-team1">Selecionar</button>
+                  <span>VS</span>
+                  <img class="team-logo" src="img/Oklahoma City Thunder.png" alt="">
+                  <span>Oklahoma City Thunder</span>
+                  <button class="btn-winner" data-winner="Oklahoma City Thunder" data-next="#quarter1-team1">Selecionar</button>
+                </div>
+              </div>
+              <div class="game">
+                <p>Jogo 2</p>
+                <div class="match">
+                  <img class="team-logo" src="img/Milwaukee Bucks.png" alt="">
+                  <span>Milwuakee Bucks</span>
+                  <button class="btn-winner" data-winner="Milwuakee Bucks" data-next="#quarter1-team2">Selecionar</button>
+                  <span>VS</span>
+                  <img class="team-logo" src="img/Chicago Bulls.png" alt="">
+                  <span>Chicago Bulls</span>
+                  <button class="btn-winner" data-winner="Chicago Bulls" data-next="#quarter1-team2">Selecionar</button>
+                </div>
+              </div>
+              <div class="game">
+                <p>Jogo 3</p>
+                <div class="match">
+                  <img class="team-logo" src="img/New York Knicks.png" alt="">
+                  <span>New York Knicks</span>
+                  <button class="btn-winner" data-winner="New York Knicks" data-next="#quarter2-team1">Selecionar</button>
+                  <span>VS</span>
+                  <img class="team-logo" src="img/New Orlean Pelicans.jpg" alt="">
+                  <span>New Orlean Pelicans</span>
+                  <button class="btn-winner" data-winner="New Orlean Pelicans" data-next="#quarter2-team1">Selecionar</button>
+                </div>
+              </div>
+              <div class="game">
+                <p>Jogo 4</p>
+                <div class="match">
+                  <img class="team-logo" src="img/Phoenix Suns.png" alt="">
+                  <span>Phoenix Suns</span>
+                  <button class="btn-winner" data-winner="Phoenix Suns" data-next="#quarter2-team2">Selecionar</button>
+                  <span>VS</span>
+                  <img class="team-logo" src="img/Boston Celtics.png" alt="">
+                  <span>Boston Celtics</span>
+                  <button class="btn-winner" data-winner="Boston Celtics" data-next="#quarter2-team2">Selecionar</button>
+                </div>
+              </div>
+              <div class="game">
+                <p>Jogo 5</p>
+                <div class="match">
+                  <img class="team-logo" src="img/Brooklyn Nets.png" alt="">
+                  <span>Brooklyn Nets</span>
+                  <button class="btn-winner" data-winner="Brooklyn Nets" data-next="#quarter3-team1">Selecionar</button>
+                  <span>VS</span>
+                  <img class="team-logo" src="img/Portland Trail Blazers.png" alt="">
+                  <span>Portland Trail Blazers</span>
+                  <button class="btn-winner" data-winner="Portland Trail Blazers" data-next="#quarter3-team1">Selecionar</button>
+                </div>
+              </div>
+              <div class="game">
+                <p>Jogo 6</p>
+                <div class="match">
+                  <img class="team-logo" src="img/Orlando Magic.png" alt="">
+                  <span>Orlando Magic</span>
+                  <button class="btn-winner" data-winner="Orlando Magic" data-next="#quarter3-team2">Selecionar</button>
+                  <span>VS</span>
+                  <img class="team-logo" src="img/Houston Rockets.png" alt="">
+                  <span>Houston Rockets</span>
+                  <button class="btn-winner" data-winner="Houston Rockets" data-next="#quarter3-team2">Selecionar</button>
+                </div>
+              </div><div class="game">
+                <p>Jogo 7</p>
+                <div class="match">
+                  <img class="team-logo" src="img/Los Angeles Lakers.png" alt="">
+                  <span>Los Angeles Lakers</span>
+                  <button class="btn-winner" data-winner="Los Angeles Lakers" data-next="#quarter4-team1">Selecionar</button>
+                  <span>VS</span>
+                  <img class="team-logo" src="img/Utah Jazz.jpg" alt="">
+                  <span>Utah Jazz</span>
+                  <button class="btn-winner" data-winner="Utah Jazz" data-next="#quarter4-team1">Selecionar</button>
+                </div>
+              </div><div class="game">
+                <p>Jogo 8</p>
+                <div class="match">
+                  <img class="team-logo" src="img/Indiana Pacers.png" alt="">
+                  <span>Indiana Pacers</span>
+                  <button class="btn-winner" data-winner="Indiana Pacers" data-next="#quarter4-team2">Selecionar</button>
+                  <span>VS</span>
+                  <img class="team-logo" src="img/Detroit Pistons.png" alt="">
+                  <span>Detriot Pistons</span>
+                  <button class="btn-winner" data-winner="Detriot Pistons" data-next="#quarter4-team2">Selecionar</button>
+                </div>
+              </div>
+        </div>
+      </section>
+  
+      <section>
+        <h1 class="titulo">Quartas de Finais</h1>
+        <div class="grid">
+          <div class="game">
+            <p>Quartas - Jogo 1</p>
+            <div class="match">
+              <span id="quarter1-team1"></span>
+              <button class="btn-winner" data-next="#semi1-team1">Selecionar</button>
+              <span>VS</span>
+              <span id="quarter1-team2"></span>
+              <button class="btn-winner" data-next="#semi1-team1">Selecionar</button>
+            </div>
+          </div>
+          <div class="game">
+            <p>Quartas - Jogo 2</p>
+            <div class="match">
+              <span id="quarter2-team1"></span>
+              <button class="btn-winner" data-next="#semi1-team2">Selecionar</button>
+              <span>VS</span>
+              <span id="quarter2-team2"></span>
+              <button class="btn-winner" data-next="#semi1-team2">Selecionar</button>
+            </div>
+          </div>
+          <div class="game">
+            <p>Quartas - Jogo 3</p>
+            <div class="match">
+              <span id="quarter3-team1"></span>
+              <button class="btn-winner" data-next="#semi2-team1">Selecionar</button>
+              <span>VS</span>
+              <span id="quarter3-team2"></span>
+              <button class="btn-winner" data-next="#semi2-team1">Selecionar</button>
+            </div>
+          </div>
+          <div class="game">
+            <p>Quartas - Jogo 4</p>
+            <div class="match">
+              <span id="quarter4-team1"></span>
+              <button class="btn-winner" data-next="#semi2-team2">Selecionar</button>
+              <span>VS</span>
+              <span id="quarter4-team2"></span>
+              <button class="btn-winner" data-next="#semi2-team2">Selecionar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h1 class="titulo">Semi-Finais</h1>
+        <div class="grid">
+          <div class="game">
+            <p>Semi-Final - Jogo 1</p>
+            <div class="match">
+              <span id="semi1-team1"></span>
+              <button class="btn-winner" data-next="#final-team1">Selecionar</button>
+              <span>VS</span>
+              <span id="semi1-team2"></span>
+              <button class="btn-winner" data-next="#final-team1">Selecionar</button>
+            </div>
+          </div>
+          <div class="game">
+            <p>Semi-Final - Jogo 2</p>
+            <div class="match">
+              <span id="semi2-team1"></span>
+              <button class="btn-winner" data-next="#final-team2">Selecionar</button>
+              <span>VS</span>
+              <span id="semi2-team2"></span>
+              <button class="btn-winner" data-next="#final-team2">Selecionar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h1 class="titulo">Final</h1>
+        <div class="grid">
+          <div class="game">
+            <div class="match">
+              <span id="final-team1"></span>
+              <button class="btn-final-winner">Selecionar</button>
+              <span>VS</span>
+              <span id="final-team2"></span>
+              <button class="btn-final-winner">Selecionar</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>Integrantes: Breno Miguel, Fellipe Manaia e Gabriel Rolim</p>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Atualiza o vencedor para a próxima rodada
+        document.querySelectorAll(".btn-winner").forEach((button) => {
+          button.addEventListener("click", (event) => {
+            const currentMatch = event.target.previousElementSibling; // Time atual
+            const winner = currentMatch ? currentMatch.textContent.trim() : ""; // Nome do vencedor
+            const nextMatchSelector = event.target.dataset.next; // Próxima posição
+  
+            // Atualiza a próxima rodada
+            if (nextMatchSelector && winner) {
+              const nextSpot = document.querySelector(nextMatchSelector);
+              if (nextSpot) {
+                nextSpot.innerText = winner; // Define o vencedor no próximo campo
+              }
+            }
+          });
+        });
+
+        // Exibe o vencedor da final
+        document.querySelectorAll(".btn-final-winner").forEach((button) => {
+          button.addEventListener("click", (event) => {
+            const currentMatch = event.target.previousElementSibling || event.target.nextElementSibling;
+            const winner = currentMatch ? currentMatch.textContent.trim() : "";
+            if (winner) {
+              alert(`O grande campeão é: ${winner}! 🏆`);
+            }
+          });
+        });
+      });
+    </script>
+    </body>
+</html>
